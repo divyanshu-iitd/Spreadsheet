@@ -1,0 +1,136 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f7fa;
+}
+
+/* App container */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Title */
+h1 {
+  margin: 5px 0 15px 0;
+  text-align: center;
+  color: #333;
+}
+
+/* Toolbar buttons */
+.toolbar {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.toolbar button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.toolbar button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Spreadsheet container */
+.spreadsheet-container {
+  flex: 1;
+  overflow: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+/* Grid wrapper */
+.grid-wrapper {
+  display: inline-block;
+}
+
+/* Column headers (A-Z) */
+.column-headers {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* Top-left corner cell */
+.corner {
+  width: 60px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Header cells (columns and rows) */
+.column-headers .header-cell,
+.rows .row .header-cell {
+  width: 80px;       /* same as cell width */
+  height: 30px;
+  flex: none;        /* prevent stretching */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Column headers background */
+.column-headers .header-cell {
+  background-color: #dfe7fd;  /* light blue */
+}
+
+/* Row headers background */
+.rows .row .header-cell {
+  background-color: #f1f3f5;  /* light gray */
+}
+
+/* Rows container */
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Each row */
+.rows .row {
+  display: flex;
+}
+
+/* Cells */
+.cell {
+  width: 80px;
+  height: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+  outline: none;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* Active cell highlight */
+.cell.active {
+  border: 2px solid #007bff;
+  background: #eaf4ff;
+}
