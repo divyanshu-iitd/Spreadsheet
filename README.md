@@ -13,18 +13,16 @@ This is a **React-based interactive grid** project that allows users to explore 
 ## Usage
 
 ### Clone the repository:  
+
    git clone <repo-link>
 
 ### Install dependencies:
 
-bash
-Copy code
 npm install
 ### Start the project:
 
-bash
-Copy code
 npm start
+
 Open in your browser at http://localhost:3000 and start interacting with the grid.
 
 ## Tech Stack
