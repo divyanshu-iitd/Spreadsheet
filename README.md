@@ -13,7 +13,6 @@ This is a **React-based interactive grid** project that allows users to explore 
 ## Usage
 
 ### Clone the repository:  
-   ```bash
    git clone <repo-link>
 
 ### Install dependencies:
