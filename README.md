@@ -14,7 +14,7 @@ This is a **React-based interactive grid** project that allows users to explore 
 
 ### Clone the repository:  
 
-   git clone <repo-link>
+  git clone https://github.com/divyanshu-iitd/Spreadsheet.git
 
 ### Install dependencies:
 
